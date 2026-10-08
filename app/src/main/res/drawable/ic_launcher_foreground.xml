@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- moldura do teleprompter -->
+    <path android:strokeColor="#4DFF88" android:strokeWidth="3.5"
+        android:fillColor="#00000000"
+        android:pathData="M30,34 h48 a4,4 0 0 1 4,4 v32 a4,4 0 0 1 -4,4 h-48 a4,4 0 0 1 -4,-4 v-32 a4,4 0 0 1 4,-4 z" />
+    <!-- linhas de texto -->
+    <path android:fillColor="#4DFF88" android:pathData="M34,42h40v3.4h-40z" />
+    <path android:fillColor="#9AF7C2" android:pathData="M34,50h40v3.4h-40z" />
+    <path android:fillColor="#4DFF88" android:pathData="M34,58h27v3.4h-27z" />
+    <!-- seta de rolar para cima -->
+    <path android:fillColor="#FFFFFF" android:pathData="M54,78 l7,9 h-4 v6 h-6 v-6 h-4 z" />
+</vector>

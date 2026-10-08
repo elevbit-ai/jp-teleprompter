@@ -1,0 +1,51 @@
+// JP Teleprompter - Criado por Joaquim Pedro de Morais Filho (j360074@hotmail.com)
+plugins {
+    id 'com.android.application'
+}
+
+def ksPropsFile = rootProject.file('keystore.properties')
+def ksProps = new Properties()
+def hasKs = ksPropsFile.exists()
+if (hasKs) { ksProps.load(new FileInputStream(ksPropsFile)) }
+
+android {
+    namespace 'ai.elevbit.jpteleprompter'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'ai.elevbit.jpteleprompter'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+        resValue "string", "author", "Joaquim Pedro de Morais Filho - j360074@hotmail.com"
+    }
+
+    signingConfigs {
+        release {
+            if (hasKs) {
+                storeFile rootProject.file(ksProps['storeFile'])
+                storePassword ksProps['storePassword']
+                keyAlias ksProps['keyAlias']
+                keyPassword ksProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig hasKs ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // Sem dependencias externas: usa apenas o framework Android (leve).
+}

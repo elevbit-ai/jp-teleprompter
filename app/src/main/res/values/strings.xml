@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JP Teleprompter</string>
+    <string name="subtitulo">Teleprompter flutuante para gravar vídeos no WhatsApp</string>
+    <string name="lbl_roteiro">Seu roteiro</string>
+    <string name="hint_roteiro">Digite ou cole aqui o texto que vai aparecer sobre a câmera…</string>
+    <string name="lbl_tamanho">Tamanho da letra</string>
+    <string name="lbl_opacidade">Opacidade do fundo</string>
+    <string name="bt_iniciar">▶  Iniciar teleprompter</string>
+    <string name="bt_whats">Abrir WhatsApp</string>
+    <string name="bt_parar">Parar teleprompter</string>
+    <string name="overlay_mover">JP ▲ segure aqui para mover</string>
+    <string name="roteiro_exemplo">Olá! Este é o JP Teleprompter.\n\nO texto aparece por cima da câmera do WhatsApp.\n\nSuba o texto com o dedo, no seu ritmo, enquanto grava o vídeo.\n\nUse A+ e A- para o tamanho da letra, e os botões de sol/lua para a opacidade do fundo.\n\nBoa gravação!</string>
+    <string name="como_usar">Como usar:\n1) Escreva o roteiro acima.\n2) Toque em Iniciar teleprompter e permita \"sobrepor a outros apps\".\n3) Abra o WhatsApp, entre na câmera e comece a gravar.\n4) Suba o texto com o dedo, no seu ritmo. O botão de gravar do WhatsApp fica livre embaixo.\n5) Para encerrar, toque no ✕ do painel ou em Parar.</string>
+    <string name="creditos">Criado por Joaquim Pedro de Morais Filho\nj360074@hotmail.com  ·  v1.0.0</string>
+    <string name="msg_permissao">Permita \"Sobrepor a outros apps\" e volte para tocar em Iniciar.</string>
+    <string name="msg_iniciado">Teleprompter iniciado! Abra o WhatsApp e grave.</string>
+    <string name="msg_parado">Teleprompter encerrado.</string>
+    <string name="msg_vazio">Escreva um roteiro primeiro.</string>
+    <string name="msg_sem_whats">WhatsApp não encontrado neste aparelho.</string>
+</resources>
